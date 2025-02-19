@@ -1,13 +1,13 @@
 name: Testing Multi Branch Pull Requests
-on: 
+on:
   pull_request:
     types:
-        - opened
+      - opened
 jobs:
-    test:
-        runs-on: ubuntu-latest
-        steps:
-        - name: Checkout
-            uses: actions/checkout@v2
-        - name: Run tests
-            run: echo "Running workflow from ${{github.ref_name}} branch"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Run tests
+        run: echo "Running workflow from ${{github.ref_name}} branch"
