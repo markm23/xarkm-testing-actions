@@ -1,8 +1,8 @@
 name: Testing Multi Branch Pull Requests
 on:
   push:
-		branches:
-			- test3
+    branches:
+      - 'test3'
 jobs:
   test:
     runs-on: ubuntu-latest
