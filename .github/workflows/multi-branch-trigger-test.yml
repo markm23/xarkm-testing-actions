@@ -1,6 +1,6 @@
 name: Testing Multi Branch Pull Requests
 on:
-  push
+  push 
 jobs:
   test:
     runs-on: ubuntu-latest
