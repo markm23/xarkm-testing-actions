@@ -2,7 +2,7 @@ name: Testing Multi Branch Pull Requests
 on:
   pull_request:
     types:
-      - opened
+      - opened 
 jobs:
   test:
     runs-on: ubuntu-latest
