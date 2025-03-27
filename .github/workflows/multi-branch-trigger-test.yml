@@ -5,7 +5,7 @@ name: Pull Request Automated Tests
 on:
   pull_request:
     branches:
-      - test-pull-request
+      - test-pull-request-to
 jobs:
   test:
     runs-on: ubuntu-latest
