@@ -1,5 +1,5 @@
 // Test toTitleCase function
 test("Test", () => {
-    expect(1 + 1).toBe(20);
+    expect(1 + 1).toBe(21);
     }
 )
