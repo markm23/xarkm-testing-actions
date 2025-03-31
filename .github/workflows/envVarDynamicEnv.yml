@@ -9,7 +9,7 @@ on:
 jobs:
   job-one:
     runs-on: ubuntu-latest
-    environment: ${{ github.head_ref || github.ref_name }} # Dynamically set environment name
+    environment: ${{ github.ref_name }} # Dynamically set environment name
     env:
       ENV_VAR: ${{ vars.TEST }} # Access environment-specific secret
     steps:
