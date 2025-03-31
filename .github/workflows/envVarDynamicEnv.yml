@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: ${{ github.head_ref || github.ref_name }} # Dynamically set environment name
     env:
-      ENV_VAR: ${{ secrets.TEST }} # Access environment-specific secret
+      ENV_VAR: ${{ vars.TEST }} # Access environment-specific secret
     steps:
       - name: Your build/deploy steps
         run: echo "Using secret ${{env.ENV_VAR}} in environment ${{ github.head_ref || github.ref_name }}"
